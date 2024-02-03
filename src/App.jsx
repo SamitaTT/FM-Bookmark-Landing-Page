@@ -1,6 +1,6 @@
 import "./App.css";
-import Header from "./pages/Header";
-import { Hero, Features, Download } from "./pages/Body";
+import Navbar from "./pages/Navbar";
+import Body from "./pages/Body";
 import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
@@ -8,10 +8,8 @@ import Footer from "./pages/Footer";
 function App() {
   return (
     <>
-      <Header />
-      <Hero />
-      <Features />
-      <Download />
+      <Navbar />
+      <Body />
       <FAQ />
       <Contact />
       <Footer />
