@@ -14,7 +14,10 @@ function FAQ() {
       </p>
       {FaqData.map((item) => {
         return (
-          <div className=" bg-white p-4 w-[40rem] border-y border-neutral-100">
+          <div
+            key={item.id}
+            className=" bg-white p-4 w-[40rem] border-y border-neutral-100"
+          >
             <Accordion title={item.title} answer={item.answer} />
           </div>
         );

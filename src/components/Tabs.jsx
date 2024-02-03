@@ -10,12 +10,12 @@ function Tabs() {
 
   return (
     <div className="w-full flex flex-col mb-40 items-center">
-      <div className="flex text-grayish-blue text-xl h-20 w-[50rem]  justify-evenly">
+      <div className="flex text-grayish-blue text-xl h-20 w-[50rem] justify-evenly">
         {FeatureData.map((tab) => {
           return (
             <button
               key={tab.id}
-              className={`hover:text-soft-red px-20 border-b border-grayish-blue${
+              className={`hover:text-soft-red px-[3.33rem] border-b border-grayish-blue${
                 activeTab === tab.id
                   ? "text-very-dark-blue border-b-4 border-soft-red"
                   : ""

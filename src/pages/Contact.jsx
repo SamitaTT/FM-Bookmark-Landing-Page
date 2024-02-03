@@ -1,6 +1,27 @@
 import { ButtonRedNoShadow } from "../components/Button";
+import { useState } from "react";
 
 function Contact() {
+  const [email, setEmail] = useState("");
+  const [isValidEmail, setIsValidEmail] = useState(true);
+
+  const handleChange = (e) => {
+    const inputValue = e.target.value;
+    setEmail(inputValue);
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    setIsValidEmail(emailRegex.test(inputValue));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (isValidEmail) {
+      alert("Thank You for Visiting! 😀");
+    } else {
+      console.error("Invalid Email");
+    }
+  };
+
   return (
     <div className="bg-soft-blue h-[25rem] flex flex-col items-center">
       <div>
@@ -12,15 +33,32 @@ function Contact() {
           we’re doing
         </h1>
       </div>
-      <div className="flex gap-4 mt-10">
-        <input
-          type="email"
-          name="email"
-          className="text-black focus:outline-none w-[19rem] h-14 rounded-md p-4"
-          placeholder="Enter your email address"
-        ></input>
-        <ButtonRedNoShadow text="Contact Us" className="shadow-none" />
-      </div>
+      <form className="flex gap-4 mt-10" onSubmit={handleSubmit}>
+        <div>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            className={`text-black focus:outline-none w-[19rem] h-14 rounded-md p-4 ${
+              isValidEmail === false && email !== ""
+                ? "border-2 border-soft-red bg-[url('src/assets/images/icon-error.svg')] bg-no-repeat bg-[center_right_1rem] rounded-b-none"
+                : ""
+            }`}
+            placeholder="Enter your email address"
+            onChange={handleChange}
+          ></input>
+          {!isValidEmail && email !== "" && (
+            <p className="italic text-white text-xs bg-soft-red w-[19rem] h-6 rounded-b-md pl-2 pt-1">
+              Whoops, make sure it's an email
+            </p>
+          )}
+        </div>
+        <ButtonRedNoShadow
+          text="Contact Us"
+          className="shadow-none"
+          type="submit"
+        />
+      </form>
     </div>
   );
 }
