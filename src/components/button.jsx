@@ -3,7 +3,8 @@ export function ButtonRed(prop) {
     <button
       className="bg-soft-red w-fix h-11 px-8 rounded-md text-white border-2 border-soft-red shadow-md shadow-shadow-blue text-lg
     hover:bg-white hover:border-2 hover:border-soft-red hover:text-soft-red
-    transition duration-300 ease-in-out"
+    transition duration-300 ease-in-out
+    dark:shadow-none dark:bg-dark-soft-red dark:hover:bg-dark-light-red dark:hover:text-dark-soft-red dark:hover:border-dark-light-red"
     >
       {prop.text}
     </button>
@@ -15,7 +16,8 @@ export function ButtonRedNoShadow(prop) {
     <button
       className="bg-soft-red w-fix h-14 px-8 rounded-md text-white border-2 border-soft-red text-lg
     hover:bg-white hover:border-2 hover:border-soft-red hover:text-soft-red
-    transition duration-300 ease-in-out"
+    transition duration-300 ease-in-out
+    dark:shadow-none dark:bg-dark-soft-red dark:hover:bg-dark-light-red dark:hover:text-dark-soft-red dark:hover:border-dark-light-red"
     >
       {prop.text}
     </button>
@@ -27,7 +29,8 @@ export function ButtonBlue(prop) {
     <button
       className="bg-soft-blue  w-fix h-14 px-6 rounded-md text-white border-2 border-soft-blue shadow-md shadow-shadow-blue text-lg 
     hover:bg-white hover:border-2 hover:border-soft-blue hover:text-soft-blue
-    transition duration-300 ease-in-out"
+    transition duration-300 ease-in-out
+    dark:shadow-none dark:bg-dark-soft-blue dark:text-white dark:hover:bg-dark-light-blue dark:hover:text-dark-soft-blue"
     >
       {prop.text}
     </button>
@@ -39,7 +42,8 @@ export function ButtonGray(prop) {
     <button
       className="bg-gray  w-fix h-14 px-6 rounded-md text-very-dark-blue border-2 border-gray shadow-md shadow-shadow-blue text-lg
     hover:bg-white hover:border-2 hover:border-very-dark-blue hover:text-very-dark-blue
-    transition duration-300 ease-in-out"
+    transition duration-300 ease-in-out
+    dark:shadow-none dark:bg-dark-secondary dark:text-white dark:hover:bg-dark-gray dark:hover:text-dark-secondary dark:border-dark-grayish-blue"
     >
       {prop.text}
     </button>

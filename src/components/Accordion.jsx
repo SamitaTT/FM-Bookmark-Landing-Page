@@ -9,9 +9,12 @@ function Accordion({ title, answer }) {
         onClick={() => {
           setAccordionOpen(!accordionOpen);
         }}
-        className="flex justify-between w-full text-very-dark-blue text-lg hover:text-soft-red group transition duration-300"
+        className="flex justify-between w-full text-very-dark-blue text-lg hover:text-soft-red group transition duration-300
+        dark:text-dark-grayish-blue dark:hover:text-dark-soft-red"
       >
-        <span>{title}</span>
+        <span className="text-very-dark-blue dark:text-dark-grayish-blue">
+          {title}
+        </span>
         {accordionOpen ? (
           <div className="bg-[url('./src/assets/images/icon-arrow.svg')] w-auto h-4 bg-no-repeat transition duration-200 ease-out rotate-180 group-hover:bg-[url('./src/assets/images/icon-arrow-red.svg')]">
             <p className="opacity-0">TT</p>
@@ -30,7 +33,9 @@ function Accordion({ title, answer }) {
       : "grid-rows-[0fr] opacity-0"
   }`}
       >
-        <div className="overflow-hidden text-grayish-blue">{answer}</div>
+        <div className="overflow-hidden text-grayish-blue dark:text-white">
+          {answer}
+        </div>
       </div>
     </div>
   );
