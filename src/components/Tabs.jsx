@@ -12,7 +12,7 @@ function Tabs() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <div className="w-screen flex flex-col mb-40 items-center">
+      <div className="w-fit flex flex-col mb-40 items-center">
         <div
           className="flex flex-col lg:flex-row text-grayish-blue 2xl:text-xl 2xl:h-20 2xl:w-[50rem] lg:gap-0 text-lg w-[20rem] gap-5 justify-evenly
          dark:text-dark-grayish-blue md:w-[32rem] lg:w-[47rem]"
@@ -40,12 +40,13 @@ function Tabs() {
                 <div className="flex lg:flex-row flex-col justify-center 2xl:gap-40 gap-16 mt-20 items-center lg:gap-10">
                   <img
                     src={tab.img}
-                    className="relative z-10 2xl:w-[38rem] w-[21rem] 2xl:left-none md:w-[32rem] lg:w-[30rem]"
+                    className="relative z-10 2xl:w-[38rem] w-[21rem] 2xl:left-none md:w-[32rem] lg:w-[30rem] xl:w-[35rem]"
                   ></img>
                   <div
-                    className="absolute 2xl:top-[90rem] left-0 bg-soft-blue 2xl:w-[42rem] 2xl:h-[27.5rem] rounded-r-full z-0 
-                  dark:bg-dark-very-dark-blue w-[20rem] h-[13.5rem] top-[91rem] md:w-[34rem] md:h-[20rem] md:top-[100rem]
-                  lg:w-[34rem] lg:h-[20rem] lg:top-[77rem]"
+                    className="absolute left-0 bg-soft-blue rounded-r-full z-0 
+                  dark:bg-dark-very-dark-blue w-[20rem] h-[13.5rem] top-[91rem]
+                  md:w-[34rem] md:h-[20rem] md:top-[100rem] lg:top-[77rem]
+                  2xl:w-[53rem] 2xl:h-[27.5rem] 2xl:top-[94rem] "
                   ></div>
                   <div className="flex flex-col 2xl:w-[500px] 2xl:h-[390px] justify-center w-full items-center 2xl:items-start">
                     <h2 className="text-very-dark-blue 2xl:text-4xl font-semibold my-6 dark:text-dark-grayish-blue text-2xl md:text-3xl">

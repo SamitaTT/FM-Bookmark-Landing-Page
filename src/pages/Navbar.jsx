@@ -16,7 +16,11 @@ function Navbar() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <nav className="w-full h-28 gap-40 flex flex-row 2xl:pl-44 2xl:pr-44 2xl:h-44 lg:gap-0 justify-around xl:justify-between items-center bg-white dark:bg-dark-primary">
+      <nav
+        className="w-full h-28 gap-40 flex flex-row justify-around xl:justify-between items-center bg-white dark:bg-dark-primary
+      2xl:pl-44 2xl:pr-44 2xl:h-44 
+      xl:pl-32 xl:pr-40 xl:h-50"
+      >
         {isMenuOpen === false && (
           <a href="#">
             <img

@@ -31,7 +31,7 @@ function Contact() {
           <h4 className="text-white 2xl:text-xl text-md tracking-[0.4rem] mt-16 2xl:mb-12 mb-2 text-center md:text-lg lg:mb-10">
             35,000+ ALREADY JOINED
           </h4>
-          <h1 className="text-white 2xl:text-4xl text-[1.7rem] font-semibold text-center lg:leading-[3rem] md:text-3xl md:py-2">
+          <h1 className="text-white xl:text-4xl text-[1.7rem] font-semibold text-center lg:leading-[3rem] md:text-3xl md:py-2">
             Stay up-to-date with what <br />
             we’re doing
           </h1>

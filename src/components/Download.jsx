@@ -16,7 +16,7 @@ function Download() {
         </span>{" "}
         you’ve got a favourite you’d like us to prioritize.
       </p>
-      <div className="flex lg:flex-row flex-col 2xl:gap-8 mb-28 lg:gap-5 lg:w-screen lg:justify-center ">
+      <div className="flex lg:flex-row flex-col 2xl:gap-8 mb-28 lg:gap-5 lg:w-fit lg:justify-center xl:gap-6">
         <div className="">
           <Card
             title="Chrome"
