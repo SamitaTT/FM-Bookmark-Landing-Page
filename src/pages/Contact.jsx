@@ -26,12 +26,12 @@ function Contact() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <div className="bg-soft-blue h-[25rem] flex flex-col items-center dark:bg-dark-tertiary">
+      <div className="bg-soft-blue h-[25.5rem] flex flex-col items-center dark:bg-dark-tertiary">
         <div>
-          <h4 className="text-white 2xl:text-xl text-md tracking-[0.4rem] mt-16 2xl:mb-12 mb-2 text-center">
+          <h4 className="text-white 2xl:text-xl text-md tracking-[0.4rem] mt-16 2xl:mb-12 mb-2 text-center md:text-lg">
             35,000+ ALREADY JOINED
           </h4>
-          <h1 className="text-white 2xl:text-4xl text-[1.7rem] font-semibold text-center 2xl:leading-[3rem]">
+          <h1 className="text-white 2xl:text-4xl text-[1.7rem] font-semibold text-center 2xl:leading-[3rem] md:text-3xl md:py-2">
             Stay up-to-date with what <br />
             we’re doing
           </h1>

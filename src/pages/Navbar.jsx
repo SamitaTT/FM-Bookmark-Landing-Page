@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <nav className="w-full h-28 justify-start pl-8 gap-40 flex flex-row 2xl:pl-44 2xl:pr-44 2xl:h-44 2xl:justify-between items-center bg-white dark:bg-dark-primary">
+      <nav className="w-full h-28 gap-40 flex flex-row 2xl:pl-44 2xl:pr-44 2xl:h-44 justify-around lg:justify-between items-center bg-white dark:bg-dark-primary">
         {isMenuOpen === false && (
           <a href="#">
             <img
@@ -32,7 +32,7 @@ function Navbar() {
             ></img>
           </a>
         )}
-        <ul className="text-very-dark-blue md:flex flex-row gap-12 text-lg items-center dark:text-white hidden">
+        <ul className="text-very-dark-blue lg:flex flex-row gap-12 text-lg items-center dark:text-white hidden">
           <li>
             <a
               href="#"
@@ -75,9 +75,12 @@ function Navbar() {
           </li>
         </ul>
         {isMenuOpen ? (
-          <div className="md:hidden">
-            <ul className="bg-[#1e2240]/95 text-white w-screen h-screen flex flex-col gap-5 text-md items-center dark:text-white absolute left-0 top-0 z-30">
-              <li className="flex flex-row pt-8 pb-2">
+          <div className="lg:hidden">
+            <ul
+              className="bg-[#1e2240]/95 text-white w-screen h-screen flex flex-col gap-5 text-md items-center dark:text-white absolute left-0 top-0 z-30
+            md:gap-8"
+            >
+              <li className="flex flex-row pt-8 pb-2 w-full justify-around">
                 <a href="#">
                   <img
                     src={
@@ -93,7 +96,7 @@ function Navbar() {
                   X
                 </button>
               </li>
-              <hr className="w-80 opacity-30" />
+              <hr className="w-80 opacity-30 md:w-[34rem]" />
               <li>
                 <a
                   href="#"
@@ -102,7 +105,7 @@ function Navbar() {
                   FEATURES
                 </a>
               </li>
-              <hr className="w-80 opacity-30" />
+              <hr className="w-80 opacity-30 md:w-[34rem]" />
               <li>
                 <a
                   href="#"
@@ -111,7 +114,7 @@ function Navbar() {
                   PRICING
                 </a>
               </li>
-              <hr className="w-80 opacity-30" />
+              <hr className="w-80 opacity-30 md:w-[34rem]" />
               <li>
                 <a
                   href="#"
@@ -120,7 +123,7 @@ function Navbar() {
                   CONTACT
                 </a>
               </li>
-              <hr className="w-80 opacity-30" />
+              <hr className="w-80 opacity-30 md:w-[34rem]" />
               <li>
                 <button className="text-xl border-2 rounded-md w-80 h-12 hover:text-soft-red hover:border-soft-red">
                   LOGIN
@@ -158,7 +161,7 @@ function Navbar() {
             </ul>
           </div>
         ) : (
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button onClick={toggleMenu}>
               <img
                 src="./src/assets/images/icon-hamburger.svg"
