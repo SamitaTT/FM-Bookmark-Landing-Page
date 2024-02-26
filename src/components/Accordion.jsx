@@ -12,7 +12,7 @@ function Accordion({ title, answer }) {
         className="flex justify-between w-full text-very-dark-blue text-lg hover:text-soft-red group transition duration-300
         dark:text-dark-grayish-blue dark:hover:text-dark-soft-red"
       >
-        <span className="text-very-dark-blue dark:text-dark-grayish-blue">
+        <span className="text-very-dark-blue dark:text-dark-grayish-blue hover:text-soft-red dark:hover:text-dark-soft-red">
           {title}
         </span>
         {accordionOpen ? (

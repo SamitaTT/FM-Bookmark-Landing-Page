@@ -1,7 +1,7 @@
 export function ButtonRed(prop) {
   return (
     <button
-      className="bg-soft-red w-fix h-11 px-8 rounded-md text-white border-2 border-soft-red shadow-md shadow-shadow-blue text-lg
+      className="bg-soft-red 2xl:w-fix 2xl:h-11 2xl:px-8 rounded-md text-white border-2 border-soft-red shadow-md shadow-shadow-blue 2xl:text-lg
     hover:bg-white hover:border-2 hover:border-soft-red hover:text-soft-red
     transition duration-300 ease-in-out
     dark:shadow-none dark:bg-dark-soft-red dark:hover:bg-dark-light-red dark:hover:text-dark-soft-red dark:hover:border-dark-light-red"
