@@ -9,7 +9,7 @@ function Accordion({ title, answer }) {
         onClick={() => {
           setAccordionOpen(!accordionOpen);
         }}
-        className="flex justify-between w-full text-very-dark-blue text-lg hover:text-soft-red group transition duration-300
+        className="flex justify-between w-full text-very-dark-blue 2xl:text-lg text-md hover:text-soft-red group transition duration-300
         dark:text-dark-grayish-blue dark:hover:text-dark-soft-red"
       >
         <span className="text-very-dark-blue dark:text-dark-grayish-blue hover:text-soft-red dark:hover:text-dark-soft-red">
@@ -33,7 +33,7 @@ function Accordion({ title, answer }) {
       : "grid-rows-[0fr] opacity-0"
   }`}
       >
-        <div className="overflow-hidden text-grayish-blue dark:text-white">
+        <div className="overflow-hidden text-grayish-blue dark:text-white 2xl:leading-normal leading-7">
           {answer}
         </div>
       </div>

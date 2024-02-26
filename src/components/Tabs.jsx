@@ -13,12 +13,12 @@ function Tabs() {
   return (
     <div className={`${darkMode && "dark"}`}>
       <div className="w-full flex flex-col mb-40 items-center">
-        <div className="flex text-grayish-blue text-xl h-20 w-[50rem] justify-evenly dark:text-dark-grayish-blue">
+        <div className="flex flex-col 2xl:flex-row text-grayish-blue 2xl:text-xl 2xl:h-20 2xl:w-[50rem] 2xl:gap-0 text-lg w-[20rem] gap-5 justify-evenly dark:text-dark-grayish-blue">
           {FeatureData.map((tab) => {
             return (
               <button
                 key={tab.id}
-                className={`hover:text-soft-red px-[3.33rem] border-b border-grayish-blue ${
+                className={`hover:text-soft-red 2xl:px-[3.33rem] 2xl:pb-0 border-b border-grayish-blue pb-5 ${
                   activeTab === tab.id
                     ? "text-very-dark-blue border-b-4 border-soft-red dark:text-white dark:border-dark-soft-red"
                     : ""
@@ -34,20 +34,23 @@ function Tabs() {
           return (
             <div key={tab.id}>
               {activeTab === tab.id && (
-                <div className="flex justify-center gap-40 mt-20">
-                  <img src={tab.img} className="relative z-10 w-[38rem]"></img>
+                <div className="flex 2xl:flex-row flex-col justify-center 2xl:gap-40 gap-16 mt-20 items-center ">
+                  <img
+                    src={tab.img}
+                    className="relative z-10 2xl:w-[38rem] w-[21rem] 2xl:left-none"
+                  ></img>
                   <div
-                    className="absolute top-[90rem] left-0 bg-soft-blue w-[42rem] h-[27.5rem] rounded-r-full z-0 
-                  dark:bg-dark-very-dark-blue"
+                    className="absolute 2xl:top-[90rem] left-0 bg-soft-blue 2xl:w-[42rem] 2xl:h-[27.5rem] rounded-r-full z-0 
+                  dark:bg-dark-very-dark-blue w-[20rem] h-[13.5rem] top-[91rem]"
                   ></div>
-                  <div className="flex flex-col w-[500px] h-[390px] justify-center">
-                    <h2 className="text-very-dark-blue text-4xl font-semibold my-6 dark:text-dark-grayish-blue">
+                  <div className="flex flex-col 2xl:w-[500px] 2xl:h-[390px] justify-center w-full items-center 2xl:items-start">
+                    <h2 className="text-very-dark-blue 2xl:text-4xl font-semibold my-6 dark:text-dark-grayish-blue text-2xl">
                       {tab.heading}
                     </h2>
-                    <p className="text-grayish-blue text-xl mb-8 dark:text-white">
+                    <p className="text-grayish-blue 2xl:text-xl 2xl:w-fit 2xl:text-left 2xl:leading-9 text-md mb-8 dark:text-white w-[320px] text-center leading-8">
                       {tab.content}
                     </p>
-                    <div className="w-36">
+                    <div className="2xl:w-36">
                       <ButtonBlue text="More Info" />
                     </div>
                   </div>

@@ -3,14 +3,17 @@ import Card from "../components/Card";
 function Download() {
   return (
     <div className="flex flex-col items-center bg-white dark:bg-dark-primary">
-      <h1 className="text-very-dark-blue text-4xl font-semibold my-6 dark:text-dark-grayish-blue">
+      <h1 className="text-very-dark-blue 2xl:text-4xl font-semibold 2xl:my-6 dark:text-dark-grayish-blue text-2xl mt-44">
         Download the extension
       </h1>
-      <p className="text-grayish-blue text-xl mb-14 text-center dark:text-white">
-        We’ve got more browsers in the pipeline. Please do let us know if <br />
+      <p className="text-grayish-blue 2xl:text-xl text-md mb-14 text-center dark:text-white 2xl:w-fit w-[300px] leading-8 2xl:mt-0 mt-2">
+        We’ve got more browsers in the pipeline. Please do let us know if
+        <span className="2xl:block hidden 2xl:leading-[0.5rem]">
+          <br />
+        </span>
         you’ve got a favourite you’d like us to prioritize.
       </p>
-      <div className="flex gap-8 mb-28">
+      <div className="flex 2xl:flex-row flex-col 2xl:gap-8 mb-28">
         <div className="">
           <Card
             title="Chrome"
@@ -18,14 +21,14 @@ function Download() {
             img="./src/assets/images/logo-chrome.svg"
           />
         </div>
-        <div className="mt-10">
+        <div className="2xl:mt-10 mt-10">
           <Card
             title="Firefox"
             version="55"
             img="./src/assets/images/logo-firefox.svg"
           />
         </div>
-        <div className="mt-20">
+        <div className="2xl:mt-20 mt-10">
           <Card
             title="Opera"
             version="46"

@@ -28,15 +28,18 @@ function Contact() {
     <div className={`${darkMode && "dark"}`}>
       <div className="bg-soft-blue h-[25rem] flex flex-col items-center dark:bg-dark-tertiary">
         <div>
-          <h4 className="text-white text-xl tracking-[0.4rem] mt-16 mb-12 text-center">
+          <h4 className="text-white 2xl:text-xl text-md tracking-[0.4rem] mt-16 2xl:mb-12 mb-2 text-center">
             35,000+ ALREADY JOINED
           </h4>
-          <h1 className="text-white text-4xl font-semibold text-center leading-[3rem]">
+          <h1 className="text-white 2xl:text-4xl text-[1.7rem] font-semibold text-center 2xl:leading-[3rem]">
             Stay up-to-date with what <br />
             we’re doing
           </h1>
         </div>
-        <form className="flex gap-4 mt-10" onSubmit={handleSubmit}>
+        <form
+          className="flex 2xl:flex-row flex-col gap-4 mt-10"
+          onSubmit={handleSubmit}
+        >
           <div>
             <input
               type="email"
