@@ -16,7 +16,7 @@ function Navbar() {
 
   return (
     <div className={`${darkMode && "dark"}`}>
-      <nav className="w-full h-28 gap-40 flex flex-row 2xl:pl-44 2xl:pr-44 2xl:h-44 justify-around lg:justify-between items-center bg-white dark:bg-dark-primary">
+      <nav className="w-full h-28 gap-40 flex flex-row 2xl:pl-44 2xl:pr-44 2xl:h-44 lg:gap-0 justify-around xl:justify-between items-center bg-white dark:bg-dark-primary">
         {isMenuOpen === false && (
           <a href="#">
             <img
@@ -27,7 +27,7 @@ function Navbar() {
               }
               alt="bookmark-logo"
               className={
-                darkMode ? "2xl:w-auto 2xl:h-8 h-6" : "2xl:w-auto 2xl:h-8"
+                darkMode ? "lg:w-auto 2xl:h-8 h-6" : "lg:w-auto 2xl:h-8"
               }
             ></img>
           </a>

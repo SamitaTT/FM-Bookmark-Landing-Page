@@ -3,7 +3,7 @@ import Card from "../components/Card";
 function Download() {
   return (
     <div className="flex flex-col items-center bg-white dark:bg-dark-primary">
-      <h1 className="text-very-dark-blue 2xl:text-4xl font-semibold 2xl:my-6 dark:text-dark-grayish-blue text-2xl mt-44 md:text-3xl md:mt-80">
+      <h1 className="text-very-dark-blue 2xl:text-4xl font-semibold 2xl:my-6 dark:text-dark-grayish-blue text-2xl mt-44 md:text-3xl md:mt-80 lg:mt-6">
         Download the extension
       </h1>
       <p
@@ -16,7 +16,7 @@ function Download() {
         </span>{" "}
         you’ve got a favourite you’d like us to prioritize.
       </p>
-      <div className="flex 2xl:flex-row flex-col 2xl:gap-8 mb-28">
+      <div className="flex lg:flex-row flex-col 2xl:gap-8 mb-28 lg:gap-5 lg:w-screen lg:justify-center ">
         <div className="">
           <Card
             title="Chrome"
@@ -31,7 +31,7 @@ function Download() {
             img="./src/assets/images/logo-firefox.svg"
           />
         </div>
-        <div className="2xl:mt-20 mt-10">
+        <div className="lg:mt-20 mt-10">
           <Card
             title="Opera"
             version="46"
