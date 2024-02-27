@@ -1,4 +1,4 @@
-import { ButtonRed, ButtonRedNoShadow } from "../components/Button";
+import { ButtonRed } from "../components/Button";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
 import "../index.css";
 import { useDarkMode } from "../context/DarkModeContext";
@@ -26,8 +26,8 @@ function Navbar() {
             <img
               src={
                 darkMode
-                  ? "./src/assets/images/logo-bookmark-footer.svg"
-                  : "./src/assets/images/logo-bookmark.svg"
+                  ? "/images/logo-bookmark-footer.svg"
+                  : "/images/logo-bookmark.svg"
               }
               alt="bookmark-logo"
               className={
@@ -89,8 +89,8 @@ function Navbar() {
                   <img
                     src={
                       darkMode
-                        ? "./src/assets/images/logo-bookmark-footer.svg"
-                        : "./src/assets/images/logo-bookmark-footer.svg"
+                        ? "/images/logo-bookmark-footer.svg"
+                        : "/images/logo-bookmark-footer.svg"
                     }
                     alt="bookmark-logo"
                     className="w-auto h-7 mr-36"
@@ -168,7 +168,7 @@ function Navbar() {
           <div className="lg:hidden">
             <button onClick={toggleMenu}>
               <img
-                src="./src/assets/images/icon-hamburger.svg"
+                src="/images/icon-hamburger.svg"
                 alt="open-menu"
                 className="w-4 h-4 hover:cursor-pointer"
               ></img>

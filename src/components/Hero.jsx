@@ -1,4 +1,4 @@
-import { ButtonBlue, ButtonGray } from "../components/Button";
+import { ButtonBlue, ButtonGray } from "./Button";
 
 function Hero() {
   return (
@@ -40,7 +40,7 @@ function Hero() {
       </div>
       <div className="order-1 lg:order-2 flex">
         <img
-          src="./src/assets/images/illustration-hero.svg"
+          src="/images/illustration-hero.svg"
           alt="preview-browser"
           className="2xl:w-[800px] h-auto z-20 relative w-[500px] md:w-[700px] lg:w-[570px] xl:w-[670px]"
         ></img>

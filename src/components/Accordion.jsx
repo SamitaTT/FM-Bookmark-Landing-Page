@@ -16,11 +16,11 @@ function Accordion({ title, answer }) {
           {title}
         </span>
         {accordionOpen ? (
-          <div className="bg-[url('./src/assets/images/icon-arrow.svg')] w-auto h-4 bg-no-repeat transition duration-200 ease-out rotate-180 group-hover:bg-[url('./src/assets/images/icon-arrow-red.svg')]">
+          <div className="bg-[url('/images/icon-arrow.svg')] w-auto h-4 bg-no-repeat transition duration-200 ease-out rotate-180 group-hover:bg-[url('/images/icon-arrow-red.svg')]">
             <p className="opacity-0">TT</p>
           </div>
         ) : (
-          <div className="bg-[url('./src/assets/images/icon-arrow.svg')] w-auto h-4 bg-no-repeat transition duration-200 ease-out group-hover:bg-[url('./src/assets/images/icon-arrow-red.svg')]">
+          <div className="bg-[url('/images/icon-arrow.svg')] w-auto h-4 bg-no-repeat transition duration-200 ease-out group-hover:bg-[url('/images/icon-arrow-red.svg')]">
             <p className="opacity-0">TT</p>
           </div>
         )}

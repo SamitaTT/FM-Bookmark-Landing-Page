@@ -20,7 +20,7 @@ function Card(prop) {
         <p className="text-grayish-blue mt-2 mb-8 dark:text-white">
           Minimum version {prop.version}
         </p>
-        <img src="./src/assets/images/bg-dots.svg" alt="bg-dots"></img>
+        <img src="/images/bg-dots.svg" alt="bg-dots"></img>
         <br />
         <ButtonBlue text="Add & Install Extension" />
       </div>

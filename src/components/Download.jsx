@@ -18,25 +18,13 @@ function Download() {
       </p>
       <div className="flex lg:flex-row flex-col 2xl:gap-8 mb-28 lg:gap-5 lg:w-fit lg:justify-center xl:gap-6">
         <div className="">
-          <Card
-            title="Chrome"
-            version="62"
-            img="./src/assets/images/logo-chrome.svg"
-          />
+          <Card title="Chrome" version="62" img="/images/logo-chrome.svg" />
         </div>
         <div className="2xl:mt-10 mt-10">
-          <Card
-            title="Firefox"
-            version="55"
-            img="./src/assets/images/logo-firefox.svg"
-          />
+          <Card title="Firefox" version="55" img="/images/logo-firefox.svg" />
         </div>
         <div className="lg:mt-20 mt-10">
-          <Card
-            title="Opera"
-            version="46"
-            img="./src/assets/images/logo-opera.svg"
-          />
+          <Card title="Opera" version="46" img="/images/logo-opera.svg" />
         </div>
       </div>
     </div>

@@ -12,7 +12,7 @@ function Footer() {
       >
         <a href="#">
           <img
-            src="./src/assets/images/logo-bookmark-footer.svg"
+            src="/images/logo-bookmark-footer.svg"
             alt="bookmark-logo"
             className="w-auto 2xl:h-8 h-7 my-10"
           ></img>

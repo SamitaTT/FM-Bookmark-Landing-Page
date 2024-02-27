@@ -47,7 +47,7 @@ function Contact() {
               value={email}
               className={`text-black focus:outline-none w-[19rem] h-14 rounded-md p-4 ${
                 isValidEmail === false && email !== ""
-                  ? "border-2 border-soft-red bg-[url('src/assets/images/icon-error.svg')] bg-no-repeat bg-[center_right_1rem] rounded-b-none"
+                  ? "border-2 border-soft-red bg-[url('/images/icon-error.svg')] bg-no-repeat bg-[center_right_1rem] rounded-b-none"
                   : ""
               }`}
               placeholder="Enter your email address"
