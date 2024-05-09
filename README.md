@@ -12,4 +12,4 @@ This project is a challenge to create a landing page based on the provided desig
 
 A challenge made by [Frontend Mentor](https://www.frontendmentor.io/challenges/bookmark-landing-page-5d0b588a9edda32581d29158)
 
-[Preview](https://fm-bookmark-landing-page2-8ku51t2k3-samitatts-projects.vercel.app/)
+[Preview](https://fm-bookmark-landing-page2.vercel.app/)
